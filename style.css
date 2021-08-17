@@ -1,0 +1,45 @@
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/city.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+.highway{
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url(images/road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite;
+}
+
+.motor{
+    width: 400px;
+    left: 50%;
+    bottom: 200px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+
+}
+
+.motor img{
+    width: 100%;
+}
+
+@keyframes highway{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+
